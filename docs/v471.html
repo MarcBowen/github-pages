@@ -21,16 +21,208 @@
 </div>
 
 <div id="content">
-    <h1>DES Release Note - R4.7.1.0</h1>
-    <h2>Table of Contents</h2>
-    <ul>
-        <li>Scope</li>
-        <li>Implementation Window</li>
-        <li>JIRA Issues in Release</li>
-        <li>Scope</li>
-        <li>Scope</li>
+    <h1>DES Release Note - Release-4.7.2.8</h1>
 
-    </ul>
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#Scope">Scope</a></li>
+        <li><a href="#Implementation-Window">Implementation Window</a></li>
+        <li><a href="#JIRA-Issues-in-Release">JIRA Issues in Release</a></li>
+        <li><a href="#Application-&amp;-Component-Versions">Application &amp; Component Versions</a></li>
+        <li><a href="#Release-Steps">Release Steps</a>
+            <ol>
+                <li><a href="#MES-Backend">MES Backend</a></li>
+                <li><a href="#Mobile-App">Mobile App</a></li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2 id="Scope">Scope</h2>
+    <p>&lt;INSERT ADDITIONAL INFORMATION&gt;</p>
+
+    <h2 id="Implementation-Window">Implementation Window</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>What</th>
+            <th>When</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Mobile App</td>
+            <td>&lt;INSERT ADDITIONAL INFORMATION&gt;</td>
+        </tr>
+        <tr>
+            <td>Backend</td>
+            <td>&lt;INSERT ADDITIONAL INFORMATION&gt;</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2 id="JIRA-Issues-in-Release">JIRA Issues in Release</h2>
+    <p>&lt;INSERT JIRA MACRO WITH SEARCH QUERY:<br>project = MES AND fixVersion in ("v4.7.2.8") &gt;</p>
+
+    <h2 id="Application-&amp;-Component-Versions">Application &amp; Component Versions</h2>
+    <p>All repositories have been tagged with 'release-4.7.2.8'</p>
+    <table>
+        <thead>
+        <tr>
+            <th>Component</th>
+            <th>Version Number</th>
+            <th>Git Repositories</th>
+            <th>Git Commit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Mobile App</td>
+            <td>4.7.2</td>
+            <td>git@github.com:dvsa/des-mobile-app.git</td>
+            <td>b6155faf843483bd315e9b3153d6c2197a7e0d89</td>
+        </tr>
+        <tr>
+            <td>API</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-configuration-service.git</td>
+            <td>1b28c6e7e92817e9f5bc9773618f25ce67579170</td>
+        </tr>
+        <tr>
+            <td>Custom Authorizer</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-custom-authorizer.git</td>
+            <td>95fd264dae2f31999b1b8d5a192d531a2c63992f</td>
+        </tr>
+        <tr>
+            <td>Documents Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-documents-service.git</td>
+            <td>e6c48c1e4983b28a9d3752f3807cddc0563a5438</td>
+        </tr>
+        <tr>
+            <td>Journal Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-journal-service.git</td>
+            <td>df9a62deefa25c7bc3e4bb2eda44deb37f564e43</td>
+        </tr>
+        <tr>
+            <td>Logs Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-logs-service.git</td>
+            <td>012332eacab2e61e294d3f6feffc70b7389a9e09</td>
+        </tr>
+        <tr>
+            <td>Result Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-result-service.git</td>
+            <td>b08c99334ad34e1a25fb9d156790dae233807984</td>
+        </tr>
+        <tr>
+            <td>User Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-user-service.git</td>
+            <td>adfdf83f13f8df4b2b42279bd8b8175a988656b7</td>
+        </tr>
+        <tr>
+            <td>Delegated Booking Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-delegated-booking-service.git</td>
+            <td>0b8288be36f1b3d9a7aad28e1ab49db50ef0f8e5</td>
+        </tr>
+        <tr>
+            <td>Driver Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-driver-service.git</td>
+            <td>c030c10417e36a1a81313793325018b4b271d5cc</td>
+        </tr>
+        <tr>
+            <td>Reference Data Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-reference-data-service.git</td>
+            <td>1a6c0faa917b8685be70e5fb6edf9588d63c73dd</td>
+        </tr>
+        <tr>
+            <td>DRS Data Poller Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-data-poller-service.git</td>
+            <td>c547385eda415dce2294dff443ace0a1b4c1e983</td>
+        </tr>
+        <tr>
+            <td>DRS MI Export Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-mi-export-service.git</td>
+            <td>05c1cca2023a26a0f9ed4cba74173bc9cb0504aa</td>
+        </tr>
+        <tr>
+            <td>DRS Result Processing Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-result-processing-service.git</td>
+            <td>0c5fc4463cfa6279c9cafed99e3bd4205d6bdb36</td>
+        </tr>
+        <tr>
+            <td>DMS Data Migration Service</td>
+            <td>release-4.7.2.8</td>
+            <td>git@github.com:dvsa/mes-data-migration-service.git</td>
+            <td>5b1bef3ee5de18cbea8542f1e1f770b955784f00</td>
+        </tr>
+        <tr>
+            <td>Terraform</td>
+            <td>release-4.7.2</td>
+            <td>git@github.com:dvsa/des-terraform.git</td>
+            <td>83bb59d04b08f8ce0acdf5f3b51c50855609868e</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2 id="Release-Steps">Release Steps</h2>
+    <h3 id="MES-Backend">MES Backend</h3>
+    <ol>
+        <li>Run the Deployment pipeline with the following parameters:</li>
+    </ol>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>TERRAFORM_BRANCH</td>
+            <td>release-4.7.2</td>
+        </tr>
+        <tr>
+            <td>API_VERSION</td>
+            <td>release-4.7.2.8</td>
+        </tr>
+        <tr>
+            <td>DRS_VERSION</td>
+            <td>release-4.7.2.8</td>
+        </tr>
+        <tr>
+            <td>DMS_VERSION</td>
+            <td>release-4.7.2.8</td>
+        </tr>
+        <tr>
+            <td>GATE_TIMEOUT</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>TARS_REPLICA_DB_SCRIPT_BRANCH</td>
+            <td>develop</td>
+        </tr>
+        <tr>
+            <td>FULL_DMS_DEPLOY</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>DRS_EARLY_RUN</td>
+            <td>False</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3 id="Mobile-App">Mobile App</h3>
+    <p>For UAT builds, download the IPA and pass on to DVSA EUC team for uploading to Intune:<br>
+        <a href="http://jenkins.mobile.mgmt.mes.dvsacloud.uk:8080/job/des_mobile-app_build/">Mobile App Builds URL</a></p>
 </div>
 </body>
 </html>
